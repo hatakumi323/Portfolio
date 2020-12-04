@@ -5,3 +5,32 @@
     top: 50px;                  /* 上からの位置指定 */
     color:white;
 }
+
+ .animate__animated.animate__fadeInUp {
+    --animate-duration: 2s;
+  }
+
+  .video-wrap {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  video {
+    position: absolute;
+  }
+  @media (aspect-ratio: 16/9), (min-aspect-ratio: 16/9) {
+    video {
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  @media (max-aspect-ratio: 16/9) {
+    video {
+      height: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }

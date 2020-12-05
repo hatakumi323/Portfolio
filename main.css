@@ -1,5 +1,12 @@
+  h2 {
+    text-align: center;
+    font-family: 'Major Mono Display', monospace;
+    font-family: 'Tajawal', sans-serif;
+  }
+
   .video-wrap video {
     display: block;
+    margin-bottom: 100px;
     width:100%
 }
 
@@ -19,6 +26,26 @@
     font-size: 60px;
 }
 
-.works {
-    margin-top: 200px;
+img {
+  margin-right:10px;
+  width: 266px;
+}
+
+.wine-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 420px;
+  padding: 10px 0;
+  margin-bottom: 100px;
+}
+.wine-row p{
+  display: block;
+  line-height: 1.5;
+}
+
+.wine-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

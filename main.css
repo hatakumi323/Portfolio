@@ -1,8 +1,13 @@
-.absolute_test {
-    position:  absolute;        /* 要素の配置方法を指定 */ 
-    padding:  20px;             /* 余白指定 */
-    left:  50px;                /* 左からの位置指定 */
-    top: 50px;                  /* 上からの位置指定 */
+  .video-wrap video {
+    display: block;
+    width:100%
+}
+
+  .absolute_test {
+    position: absolute;        
+    padding:  20px;
+    left:  50px;
+    top: 50px;
     color:white;
 }
 
@@ -10,27 +15,7 @@
     --animate-duration: 2s;
   }
 
-  .video-wrap {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-  }
-  video {
-    position: absolute;
-  }
-  @media (aspect-ratio: 16/9), (min-aspect-ratio: 16/9) {
-    video {
-      width: 100%;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  }
-  @media (max-aspect-ratio: 16/9) {
-    video {
-      height: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
+  .main-title {
+    font-size: 60px;
+}
+

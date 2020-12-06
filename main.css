@@ -28,7 +28,7 @@
 
 img {
   margin-right:10px;
-  width: 266px;
+  width: 300px;
 }
 
 .wine-row {
@@ -41,11 +41,24 @@ img {
 }
 .wine-row p{
   display: block;
-  line-height: 1.5;
+  line-height: 4;
 }
 
 .wine-text-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+#app > div {
+  margin: 12px 0;
+}
+
+label > span {
+  display: inline-block;
+  min-width: 130px;
+}
+
+textarea {
+  width: 250px;
 }

@@ -152,30 +152,19 @@
 
   <!-- コンタクト -->
 
-  <div id="contact" class="container">
+  <form>
     <h2>Contact</h2>
-    <div id="app">
-      <div>
-        <label>
-          <span>名前：</span>
-          <input v-model="name">
-        </label>
-      </div>
-      <div>
-        <label>
-          <span>メールアドレス：</span>
-          <input v-model="email">
-        </label>
-      </div>
-      <div>
-        <label>
-          <span>お問合せ内容：</span>
-          <textarea v-model="text" rows="5"></textarea>
-        </label>
-      </div>
-      <button @click="submit">送信</button>
+    <div class="mb-3">
+      <input type="email" class="form-control col-md-4 mx-auto p-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="お名前を記入してください">
     </div>
-  </div>
+    <div class="mb-3">
+      <input type="password" class="form-control col-md-4 mx-auto" id="exampleInputPassword1" placeholder="メールアドレスを入力してください">
+    </div>
+    
+    <div class="col text-center">
+      <button type="submit" class="btn btn-primary">送信</button>
+    </div>
+  </form>
 
 
 

@@ -1,3 +1,25 @@
+  body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  
+  header {
+    height:60px;
+  }
+  
+  header .container {
+    display: flex;
+  }
+
+  .nav{
+    list-style: none;
+    display: flex;
+  }
+
+  .nav-item {
+    justify-content: flex-end;
+  }
+  
   h2 {
     text-align: center;
     font-family: 'Major Mono Display', monospace;

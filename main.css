@@ -3,6 +3,8 @@
   body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding:80px;
+    /* 見易さを意識して暫定でカラーを入れる */
+    background: #738e99;
   }
 
   a {
@@ -23,20 +25,16 @@
     width: 100%;
     margin: 0px auto;
     color: white;
-    font-size: 80px;
+    font-size: 40px;
     letter-spacing: 5px;
     top: 50%;
-    margin-top: -40px;
+    margin: 80px;
       
     text-shadow: -1px -1px 0px #0055AA,
         3px 3px 0px #0055AA,
         6px 6px 0px #0055AA;
   }
 /* ヘッダー */
-
-  header {
-    /* background: #000; */
-  }
 
   .header > .container {
     height: 60px;
@@ -56,6 +54,7 @@
   .list_nav_header {
     display: flex;
     align-items: center;
+    background-color: #eeeae4;
   }
 
   .list_nav_header li{
@@ -65,7 +64,8 @@
   }
 
   .area_nav_header {
-    margin-left: auto;
+    position: fixed;
+    justify-content: space-between;
   }
 
   .area_nav_header a{
@@ -82,11 +82,55 @@
   position: relative;
 }
 
-.bg_image_home p{
+/* 画像にテキストを表示させた場合に使用 */
+
+/* .bg_image_home a{
   position: absolute;
-  color:white;
-}
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 7px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+
+  line-height:1;
+} */
 
 .bg_image_home img{
   width: 100%;
 }
+
+/* end_home */
+
+/* about */
+
+.about {
+  height: 80vh;
+  background: #e6dcd8;
+}
+
+.about_row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about img {
+  width:50%;
+  height: 250px;
+}
+
+.about_text {
+  line-height: 4;
+}
+
+.about_text a{
+  color: #000;
+  font-size: 2em;
+}
+
+/* end_about */

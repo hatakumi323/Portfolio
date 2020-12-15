@@ -5,6 +5,8 @@
     padding:80px;
     /* 見易さを意識して暫定でカラーを入れる */
     background: #738e99;
+    height: 5000px;
+    transition: 1s;
   }
 
   .bg {
@@ -21,7 +23,6 @@
     opacity: .5;
     z-index: -1;
     }
-  }
 
   a {
     text-decoration: none;
@@ -44,7 +45,7 @@
     font-size: 40px;
     letter-spacing: 5px;
     top: 50%;
-    margin: 80px;
+    margin: 80px 0;
       
     text-shadow: -1px -1px 0px #0055AA,
         3px 3px 0px #0055AA,
@@ -66,6 +67,11 @@
     height: 30px;
     vertical-align: bottom;
   }
+  
+  /* アニメーション着けるときに使用 */
+  .area_nav_header { 
+    margin-left: auto;
+  }
 
   .list_nav_header {
     display: flex;
@@ -76,11 +82,6 @@
     margin-left: 40px;
     list-style: none;
     padding-top: 15px;
-  }
-
-  .area_nav_header {
-    position: fixed;
-    justify-content: space-between;
   }
 
   .area_nav_header a{
@@ -168,7 +169,6 @@
   max-width: 342px;
   margin: 0 auto;
   padding: 16px 16px 35px;
-  background-color: #ffffff;
 }
 
 .card-img {
@@ -180,14 +180,14 @@
 
 .card-tit {
   margin-top: 20px;
-  color: #6F7579;
+  color: #000;
   font-size: 20px;
   line-height: 1.2;
 }
 
 .card-item p {
   margin-top: 20px;
-  color: #6F7579;
+  color: #000;
   font-size: 16px;
   line-height: 1.5;
 }

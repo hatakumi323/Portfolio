@@ -199,10 +199,10 @@ input[type="email"] {
   border: 3px solid #d8d8d8;
   font-size: 18px;
   display: block;
+  text-align: center;
   margin: auto;
   padding: 15px;
   border-radius: 999px;
-  margin-bottom: 20px;
 }
 
 .btn {

@@ -27,9 +27,9 @@
   }
 
   .container {
-    max-width: 1160px;
+    max-width: 980px;
     padding: 0 40px;
-    margin:0 auto;
+    margin: auto;
   }
   
   h2 {
@@ -85,6 +85,16 @@
     font-size: 1em;
     font-weight: bold;
     line-height: 1.5;
+  }
+
+  .title-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    padding-top: 300px;
+    color: #e6dcd8;
+    font-family: 'Quicksand', sans-serif;
   }
 
 /* end_ヘッダー */
@@ -217,7 +227,7 @@ input[type="email"] {
 
 .btn-register {
   display: block;
-  margin: auto;
+  margin: 50px auto;
 }
 
 /* end_contact */

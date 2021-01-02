@@ -2,8 +2,6 @@
 
   body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* 見易さを意識して暫定でカラーを入れる */
-    background: #738e99;
   }
 
   .bg {
@@ -17,7 +15,6 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: .5;
     z-index: -1;
     }
 
@@ -111,6 +108,7 @@
 
 .about {
   height: 80vh;
+  background-color: #fff;
 }
 
 .about_row {

@@ -135,6 +135,19 @@
 
 /* skill */
 
+.animation{
+  opacity : 0;
+  visibility: hidden;
+  transition: 1s;
+  transform: translateY(30px);
+}
+/*アニメーション要素までスクロールした時のスタイル*/
+.active{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
 .card-sec {
   padding-top: 60px; /* ページタイトルの上の余白 */
   padding-bottom: 142px; /* カード下の余白*/

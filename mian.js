@@ -1,19 +1,17 @@
-//スクロール発火イベント
-window.addEventListener( "scroll" ,function(){
-
-  //スクロールの高さを取得
-  let scroll = window.pageYOffset;
-  
-  if( scroll > 4000 ){ 
-    document.body.style.backgroundColor = '#FFC400';
-  }else if( scroll > 3000 ){
-    document.body.style.backgroundColor = '#43A047';
-  }else if( scroll > 2000 ){
-    document.body.style.backgroundColor = '#FF6F00';
-  }else if( scroll > 1000 ){
-    document.body.style.backgroundColor = '#0091EA';
-  }else{
-    document.body.style.backgroundColor = '#FF4081';
+// ボタンの表示／非表示を切り替える関数
+const updateButton = () => {
+  if ($(window).scrollTop() >= 300) {
+    // 300px以上スクロールされた
+    // ボタンを表示
+    $('.card-item').fadeIn();
+  } else {
+    // ボタンを非表示
+    $('.card-item').fadeOut();
   }
-  
-});
+};
+
+// スクロールされる度にupdateButtonを実行
+$(window).on('scroll', updateButton);
+
+// ページの途中でリロード（再読み込み）された場合でも、ボタンが表示されるようにする
+updateButton();

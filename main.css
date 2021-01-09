@@ -4,20 +4,6 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
-  .bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    background-image: url("images/image_home.svg");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: -1;
-    }
-
   a {
     text-decoration: none;
     color: #fff;
@@ -106,109 +92,90 @@
 
 /* about */
 
-.about {
-  height: 80vh;
-  background-color: #fff;
-}
-
-.about_row {
+.media {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
-.about img {
-  width:50%;
-  height: 250px;
+.media__img-wrapper {
+  flex: 0 1 27.58333%;
+  margin-right: 3.33333%;
 }
 
-.about_text {
-  line-height: 4;
+.media__img {
+  width: 100%;
 }
 
-.about_text a{
-  color: #000;
-  font-size: 2em;
+.media__body {
+  flex: 1;
 }
+
+.media__body > *:last-child {
+  margin-bottom: 0;
+}
+
+.media__title {
+  margin-bottom: 10px;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.media__text {
+  /* css-wipeではスタイリングなし */
+}
+
+@media screen and (max-width: 768px) {
+  .media {
+    display: block;
+  }
+
+  .media__img-wrapper {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
 
 /* end_about */
 
 
 /* skill */
 
-.animation{
-  opacity : 0;
-  visibility: hidden;
-  transition: 1s;
-  transform: translateY(30px);
-}
-/*アニメーション要素までスクロールした時のスタイル*/
-.active{
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
+.cards {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.card-sec {
-  padding-top: 60px; /* ページタイトルの上の余白 */
-  padding-bottom: 142px; /* カード下の余白*/
-  
-}
-
-.page-title {
-  position: relative;
-  color: #333333;
-  font-size: 60px;
-}
-
-.page-title:before { /* page-titleの下線 */
-  display: inline-block;
-  position: absolute;
-  width: 76px;
-  height: 5px;
-  border-radius: 2px;
-  background-color: #3F51B5;
-  content: '';
-  bottom: -42px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.card-container {
-  display: grid; /* カードの横並び */
-  grid-template-columns: repeat(auto-fit, minmax(342px, 1fr)); /* gridの設定 */
-  gap: 20px 30px; /* カード同士の隙間 縦方向 横方向 */
-  margin: 109px auto 0;
-  text-align: start; /* カード内の中央寄せ解除 */
-}
-
-.card-item {
+.card-image {
   width: 100%;
-  max-width: 342px;
-  margin: 0 auto;
-  padding: 16px 16px 35px;
 }
 
-.card-img {
-  width: 100%;
-  max-width: 310px;
-  height: auto; 
-  vertical-align: bottom; /* 画像の下の余白を埋める */
+.cards--col3 {
+  margin-bottom: -30px;
 }
 
-.card-tit {
-  margin-top: 20px;
-  color: #000;
-  font-size: 20px;
-  line-height: 1.2;
+.cards--col3 > .cards__item {
+  width: 31.707%;
+  margin-right: 2.43902%;
+  margin-bottom: 30px;
 }
 
-.card-item p {
-  margin-top: 20px;
-  color: #000;
-  font-size: 16px;
-  line-height: 1.5;
+.cards--col3 > .cards__item:nth-of-type(3n) {
+  margin-right: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .cards--col3 {
+    margin-bottom: -20px;
+  }
+
+  .cards > .cards__item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
 
 /* end_skill */
 

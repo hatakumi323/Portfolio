@@ -55,24 +55,22 @@
 
   <!-- About -->
 
-  <div id="about" class="about">
-    <h2 class="about-title">About</h2>
-
-    <div class="about_row">
-      <img src="images/my_image.svg">
-      <div class="about_text page">
-        <p class="target">鹿児島県霧島市生まれ<br>
-          学生時代は剣道に一筋 歴１０年<br>
-          高校卒業後は自動車メーカーに勤務<br>
-          もの作りの楽しさの気づきプログラミングを勉強<br>
-          <a href="https://github.com/hatakumi323"><i class="fab fa-github"></i></a>
-          <a href="https://twitter.com/hatakumilife"><i class="fab fa-twitter-square"></i></a>
-        </p>
-
-
-      </div>
+  <div class="media">
+    <figure class="media__img-wrapper">
+      <img class="media__img" alt="写真：手に持たれたスマホ" src="images/my_image.svg">
+    </figure>
+    <div class="media__body">
+      <h3 class="media__title">
+        ユーザーを考えた設計で満足な体験を
+      </h3>
+      <p class="media__text">
+        提供するサービスやペルソナによって、webサイトの設計は異なります。サービスやペルソナに合わせた設計を行うことにより、訪問者にストレスのないよりよい体験を生み出し、満足を高めることとなります。<br>
+        わたしたちはお客さまのサイトに合ったユーザビリティを考えるため、分析やヒアリングをきめ細かく実施、満足を体験できるクリエイティブとテクノロジーを設計・構築し、今までにない期待を超えたユーザー体験を提供いたします。
+      </p>
     </div>
+    <!-- /.media__body -->
   </div>
+  <!-- /.media -->
 
   <!-- Future -->
 
@@ -84,32 +82,54 @@
 
       <div class="card-container">
 
-        <!-- card-item -->
-        <div class="card-item">
-          <a class="card-link" href="#">
-            <img class="card-img" src="images/future1.svg" alt="">
-            <div class="card-tit">コーディング</div>
-            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          </a><!-- /card-content -->
-        </div><!-- /card-item -->
-
-        <!-- card-item -->
-        <div class="card-item">
-          <a class="card-link" href="#">
-            <img class="card-img" src="images/future2.svg" alt="">
-            <div class="card-tit">レスポンシブ</div>
-            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          </a><!-- /card-content -->
-        </div><!-- /card-item -->
-
-        <!-- card-item -->
-        <div class="card-item">
-          <a class="card-link" href="#">
-            <img class="card-img" src="images/future3.svg" alt="">
-            <div class="card-tit">ネットワーク</div>
-            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          </a><!-- /card-content -->
-        </div><!-- /card-item -->
+        <div class="cards cards--col3">
+          <div class="cards__item card">
+            <figure class="card__img-wrapper">
+              <img class="card__img" alt="写真：HTMLコードが写っている画面" src="">
+            </figure>
+            <div class="card__body">
+              <h3 class="card__title">
+                webサイト制作
+              </h3>
+              <p class="card__text">
+                ユーザーにベストな体験を提供するクリエイティブとテクノロジーを作り上げます。
+              </p>
+            </div>
+            <!-- /.card__body -->
+          </div>
+          <!-- /.cards__item card -->
+          <div class="cards__item card">
+            <figure class="card__img-wrapper">
+              <img class="card__img" alt="写真：SNSアイコンが写っている画面" src="">
+            </figure>
+            <div class="card__body">
+              <h3 class="card__title">
+                デジタルマーケティング支援
+              </h3>
+              <p class="card__text">
+                自社のマーケティングを支える最適なデジタルマーケティングツールの導入をサポートします。
+              </p>
+            </div>
+            <!-- /.card__body -->
+          </div>
+          <!-- /.cards__item card -->
+          <div class="cards__item card">
+            <figure class="card__img-wrapper">
+              <img class="card__img" alt="写真：解析レポート" src="">
+            </figure>
+            <div class="card__body">
+              <h3 class="card__title">
+                解析・レポーティング
+              </h3>
+              <p class="card__text">
+                ユーザー行動を分析し、より良いサイトを作り上げるためのアイデアをご提案します。
+              </p>
+            </div>
+            <!-- /.card__body -->
+          </div>
+          <!-- /.cards__item card -->
+        </div>
+        <!-- /.cards cards--col3 -->
 
       </div><!-- /card-container -->
 
@@ -146,8 +166,6 @@
   </footer>
 
   <!-- end_footer -->
-
-  <div class="bg"></div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="main.js"></script>

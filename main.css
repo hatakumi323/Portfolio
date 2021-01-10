@@ -2,6 +2,7 @@
 
   body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #dbc6b7;
   }
 
   a {
@@ -9,28 +10,19 @@
     color: #fff;
   }
 
+  h2 {
+    text-align: center;
+    margin: 100px 0;
+    letter-spacing: 10px;
+    font-family: 'Stalemate', cursive;
+  }
+
   .container {
-    max-width: 980px;
+    max-width: 1180px;
     padding: 0 40px;
     margin: auto;
   }
   
-  h2 {
-    text-align: center;
-    font-family: 'Major Mono Display', monospace;
-    font-family: 'Tajawal', sans-serif;
-    width: 100%;
-    margin: 0px auto;
-    color: white;
-    font-size: 40px;
-    letter-spacing: 5px;
-    top: 50%;
-    margin: 80px 0;
-      
-    text-shadow: -1px -1px 0px #0055AA,
-        3px 3px 0px #0055AA,
-        6px 6px 0px #0055AA;
-  }
 /* ヘッダー */
 
   .header > .container {
@@ -38,17 +30,8 @@
     display:flex;
     align-items: center;
   }
-
-  .area_logo_header .logo {
-    display:block;
-  }
-
-  .area_logo_header .logo img {
-    height: 30px;
-    vertical-align: bottom;
-  }
   
-  /* アニメーション着けるときに使用 */
+  /* ヘッダーのナビゲーション */
   .area_nav_header { 
     margin-left: auto;
   }
@@ -80,19 +63,29 @@
     font-family: 'Quicksand', sans-serif;
   }
 
-/* end_ヘッダー */
+  /* end_ヘッダー */
   
-/* home */
+  /* home */
+  
+  .home {
+    height: 90vh;
+    background-image: url("images/demo-parallax.jpg");
+    width: 100%;                 
+    background-repeat: no-repeat;
+    border-radius: 50% 50% 50% 50%;
+  }
 
-.home {
-  height: 80vh;
-}
-
-/* end_home */
+  /* end_home */
 
 /* about */
 
+h2:first-letter {
+  font-size: 2em;
+  color: #fff;
+}
+
 .media {
+  padding-top: 40px;
   display: flex;
   align-items: center;
 }
@@ -118,10 +111,6 @@
   margin-bottom: 10px;
   font-size: 1.125rem;
   font-weight: bold;
-}
-
-.media__text {
-  /* css-wipeではスタイリングなし */
 }
 
 @media screen and (max-width: 768px) {
@@ -176,36 +165,70 @@
   }
 }
 
-
 /* end_skill */
+
+/* works */
+
+.grid {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* end_works */
 
 
 /* contact */
 
-input[type="email"] {
-  width:600px;
-  border: 3px solid #d8d8d8;
-  font-size: 18px;
-  display: block;
+form{
+  width:560px;
+  margin:0 auto;
+}
+.item{
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.inputs{
+  width:500px;
+}
+input[type="text"],input[type="email"]{
+  border: solid 1px #aaa;
+  border-radius:15px;
+  padding:10px;
+  font-size: 15px;
   text-align: center;
-  margin: auto;
-  padding: 15px;
-  border-radius: 999px;
 }
-
-.btn {
-  padding: 20px 60px;
-  display: inline-block;
-  background-color: #082b48;
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-  border-radius: 4px;
+textarea{
+  border: solid 1px #aaa;
+  border-radius:15px;
+  padding: 10px;
+  height: 160px;
+  font-size: 15px;
+  text-align: center;
 }
-
-.btn-register {
-  display: block;
-  margin: 50px auto;
+.btn-area{
+  text-align: center;
+}
+input[type="submit"]{
+  background: #e0505c;
+  border: none;
+  color: white;
+  font-size:17px;
+  font-weight:bold;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+input[type="reset"]{
+  background: #aaa;
+  border: none;
+  color: white;
+  font-size:17px;
+  font-weight:bold;
+  padding: 10px 20px;
+  margin: 0 5px;
 }
 
 /* end_contact */
@@ -218,10 +241,12 @@ footer {
   color: #fff;
   padding: 8px 0;
   margin-top: 20px;
+  width: 100%;
 }
 
 .copy-right {
   font-size: 12px;
+  text-align: center;
 }
 
 /* end_footer */

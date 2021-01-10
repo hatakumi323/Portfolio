@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Stalemate&display=swap" rel="stylesheet">
 
   <title>Portfolio</title>
 </head>
@@ -23,12 +23,6 @@
   <header class="header">
 
     <div class="container">
-      <!-- ロゴエリア -->
-      <div class="area_logo_header">
-        <a class="logo" href="">
-          <img src="images/logo.svg" alt="">
-        </a>
-      </div>
       <!-- ナビゲーションエリア -->
       <nav class="area_nav_header">
         <ul class="list_nav_header">
@@ -40,22 +34,18 @@
       </nav>
     </div>
 
-    <p class="title-text animate__animated animate__fadeInDownBig">ようこそ、私のポートフォリオへ</p>
-
   </header>
 
   <!-- end_ヘッダー -->
 
   <!-- home -->
 
-  <div class="home">
-
-
-  </div>
+  <div class="home"></div>
 
   <!-- About -->
 
-  <div class="media">
+  <h2>About</h2>
+  <div class="media container">
     <figure class="media__img-wrapper">
       <img class="media__img" alt="写真：手に持たれたスマホ" src="images/my_image.svg">
     </figure>
@@ -74,84 +64,95 @@
 
   <!-- Future -->
 
-  <section class="card-sec">
-    <div class="card-inner inner">
-
-      <h2 class="page-title">Skill</h2>
-
-
-      <div class="card-container">
-
-        <div class="cards cards--col3">
-          <div class="cards__item card">
-            <figure class="card__img-wrapper">
-              <img class="card__img" alt="写真：HTMLコードが写っている画面" src="">
-            </figure>
-            <div class="card__body">
-              <h3 class="card__title">
-                webサイト制作
-              </h3>
-              <p class="card__text">
-                ユーザーにベストな体験を提供するクリエイティブとテクノロジーを作り上げます。
-              </p>
-            </div>
-            <!-- /.card__body -->
-          </div>
-          <!-- /.cards__item card -->
-          <div class="cards__item card">
-            <figure class="card__img-wrapper">
-              <img class="card__img" alt="写真：SNSアイコンが写っている画面" src="">
-            </figure>
-            <div class="card__body">
-              <h3 class="card__title">
-                デジタルマーケティング支援
-              </h3>
-              <p class="card__text">
-                自社のマーケティングを支える最適なデジタルマーケティングツールの導入をサポートします。
-              </p>
-            </div>
-            <!-- /.card__body -->
-          </div>
-          <!-- /.cards__item card -->
-          <div class="cards__item card">
-            <figure class="card__img-wrapper">
-              <img class="card__img" alt="写真：解析レポート" src="">
-            </figure>
-            <div class="card__body">
-              <h3 class="card__title">
-                解析・レポーティング
-              </h3>
-              <p class="card__text">
-                ユーザー行動を分析し、より良いサイトを作り上げるためのアイデアをご提案します。
-              </p>
-            </div>
-            <!-- /.card__body -->
-          </div>
-          <!-- /.cards__item card -->
+  <section class="container">
+    <h2>Skill</h2>
+    <div class="cards cards--col3">
+      <div class="cards__item card">
+        <figure class="card__img-wrapper">
+          <img class="card__img" alt="写真：HTMLコードが写っている画面" src="">
+        </figure>
+        <div class="card__body">
+          <h3 class="card__title">
+            webサイト制作
+          </h3>
+          <p class="card__text">
+            ユーザーにベストな体験を提供するクリエイティブとテクノロジーを作り上げます。
+          </p>
         </div>
-        <!-- /.cards cards--col3 -->
-
-      </div><!-- /card-container -->
-
-    </div><!-- /card-inner -->
+        <!-- /.card__body -->
+      </div>
+      <!-- /.cards__item card -->
+      <div class="cards__item card">
+        <figure class="card__img-wrapper">
+          <img class="card__img" alt="写真：SNSアイコンが写っている画面" src="">
+        </figure>
+        <div class="card__body">
+          <h3 class="card__title">
+            デジタルマーケティング支援
+          </h3>
+          <p class="card__text">
+            自社のマーケティングを支える最適なデジタルマーケティングツールの導入をサポートします。
+          </p>
+        </div>
+        <!-- /.card__body -->
+      </div>
+      <!-- /.cards__item card -->
+      <div class="cards__item card">
+        <figure class="card__img-wrapper">
+          <img class="card__img" alt="写真：解析レポート" src="">
+        </figure>
+        <div class="card__body">
+          <h3 class="card__title">
+            解析・レポーティング
+          </h3>
+          <p class="card__text">
+            ユーザー行動を分析し、より良いサイトを作り上げるためのアイデアをご提案します。
+          </p>
+        </div>
+        <!-- /.card__body -->
+      </div>
+      <!-- /.cards__item card -->
+    </div>
+    <!-- /.cards cards--col3 -->
   </section><!-- /card-sec -->
 
   <!-- end_future -->
 
-  <!-- プロダクト -->
+  <!-- works -->
+  <h2>Works</h2>
+  <div class="grid container">
+    <div class="card">
+      <img src="画像パス" alt="ポートフォリオ" />
+      <p>テキスト</p>
+    </div>
+    <div class="card">
+      <img src="画像パス" alt="サロンサイト" />
+      <p>テキスト</p>
+    </div>
+  </div>
 
-
-
-  <!-- end_プロダクト -->
+  <!-- end_works -->
 
   <!-- コンタクト -->
 
-  <form action="#" method="post">
-    <div class="container">
-      <h2>Contact</h2>
-      <input type="email" name="email" id="email" placeholder="メールアドレス">
-      <button type="submit" class="btn btn-register">submit</button>
+  <form>
+    <h2>Contact</h2>
+    <div class="item">
+      <input class="inputs" type="text" name="name" placeholder="お名前を入力してください。">
     </div>
+    
+    <div class="item">
+      <input class="inputs" type="email" name="email" placeholder="メールアドレスを入力してください。">
+    </div>
+    
+    <div class="item">
+      <textarea class="inputs" placeholder="お問合せ内容をご記入ください。"></textarea>
+    </div>
+  
+    <div class="btn-area">
+      <input type="submit" value="予約する"><input type="reset" value="リセット">
+    </div>
+  
   </form>
 
   <!-- end_コンタクト -->
@@ -160,9 +161,7 @@
   <!-- footer -->
 
   <footer>
-    <div class="container">
-      <p class="copy-right">Copy right(c) 2020 12</p>
-    </div>
+      <p class="copy-right">©hatakumi works 2020</p>
   </footer>
 
   <!-- end_footer -->

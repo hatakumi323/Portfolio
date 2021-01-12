@@ -172,7 +172,6 @@ h2:first-letter {
 /* works */
 
 .grid {
-  display: grid;
   grid-template-columns: 300px 300px;
   gap: 15px;
   align-items: center;
@@ -189,9 +188,21 @@ h2:first-letter {
   border-radius: 5px 5px 0 0;
   max-width: 100%;
   height: auto;
+  margin-top: 14px;
 }
 .card-content {
   padding: 20px;
+}
+.card-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+.card-text {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
 }
 .card-link {
   text-align: center;

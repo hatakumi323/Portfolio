@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Stalemate&display=swap" rel="stylesheet">
-
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <title>Portfolio</title>
 </head>
 
@@ -24,13 +24,21 @@
 
     <div class="container">
       <!-- ナビゲーションエリア -->
-      <nav class="area_nav_header">
+      <nav class="pc-nav">
         <ul>
           <li><a href="">About</a></li>
           <li><a href="">Future</a></li>
           <li><a href="">Works</a></li>
           <li><a href="">Contact</a></li>
-          <li class="close"><span>閉じる</span></li>
+        </ul>
+      </nav>
+      <nav class="sp-nav">
+        <ul>
+           <li><a href="#">ABOUT</a></li>
+           <li><a href="#">Future</a></li>
+           <li><a href="#">Works</a></li>
+           <li><a href="#">CONTACT</a></li>
+           <li class="close"><span>閉じる</span></li>
         </ul>
       </nav>
       <div id="hamburger">
@@ -141,20 +149,24 @@
 
   <form>
     <h2>Contact</h2>
-    <div class="item">
-      <input class="inputs" type="text" name="name" placeholder="お名前を入力してください。">
-    </div>
+    <div class="container">
+
+      <div class="item">
+        <input class="inputs" type="text" name="name" placeholder="お名前を入力してください。">
+      </div>
+      
+      <div class="item">
+        <input class="inputs" type="email" name="email" placeholder="メールアドレスを入力してください。">
+      </div>
+      
+      <div class="item">
+        <textarea class="inputs" placeholder="お問合せ内容をご記入ください。"></textarea>
+      </div>
     
-    <div class="item">
-      <input class="inputs" type="email" name="email" placeholder="メールアドレスを入力してください。">
-    </div>
-    
-    <div class="item">
-      <textarea class="inputs" placeholder="お問合せ内容をご記入ください。"></textarea>
-    </div>
-  
-    <div class="btn-area">
-      <input type="submit" value="予約する"><input type="reset" value="リセット">
+      <div class="btn-area">
+        <input type="submit" value="予約する"><input type="reset" value="リセット">
+      </div>
+      
     </div>
   
   </form>
@@ -174,8 +186,6 @@
   </footer>
 
   <!-- end_footer -->
-
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="main.js"></script>
 </body>
 

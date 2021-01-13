@@ -4,6 +4,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #dbc6b7;
     margin: 0;
+    padding: 0;
   }
 
   a {
@@ -25,93 +26,138 @@
   }
   
 /* ヘッダー */
-
   .header > .container {
-    height: 60px;
-    display:flex;
-    align-items: center;
-  }
-  
-  /* ヘッダーのナビゲーション */
-  .area_nav_header { 
-    z-index: 1;
-    position: fixed;
+    padding: 30px 4% 10px;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    display: block;
-    width: 100%;
-    background: rgb(0, 0, 0,8);
-    transition: all 2s ease-in-out;
-  }
-
-  .area_nav_header ul {
-    padding: 0;
+    background-color: transparent;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row-reverse;
     align-items: center;
-    height: 100%;
   }
 
-  .area_nav_header li {
+  ul {
+    list-style: none;
     margin: 0;
-    padding: 0;
+    display: flex;
   }
 
-  .area_nav_header li span {
-    font-size: 15px;
-    color: #fff;
+  li {
+    margin: 0 0 0 15px;
+    font-size: 14px;
   }
 
-  .area_nav_header li ,
-  .area_nav_header li span {
-    display: block;
-    padding: 20px;
-  }
-
-  #hamburger {
-    position: relative;
-    display: block;
-    width: 30px;
-    height: 25px;
-    margin: 0 0 0 auto;
-  }
-
-  #hamburger span {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #fff;
-    transform: translateY(-50%);
+  .sp-nav {
+    display: none;
  }
-
- #hamburger::before {
-   content: '';
-   display: block;
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 2px;
-   background-color: #fff;
+ 
+ @media screen and (max-width: 640px) {
+    .pc-nav {
+       display: none;
+    }
+    .sp-nav {
+       z-index: 1;
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100vh;
+       display: block;
+       width: 100%;
+       background: rgba(0, 0, 0, .8);
+       opacity: 0;
+       transform: translateY(-100%);
+       transition: all .2s ease-in-out;
+    }
+    #hamburger {
+       position: relative;
+       display: block;
+       width: 30px;
+       height: 25px;
+       margin: 0 40px 0 auto;
+    }
+    #hamburger span {
+       position: absolute;
+       top: 50%;
+       left: 0;
+       display: block;
+       width: 100%;
+       height: 2px;
+       background-color: #fff;
+       transform: translateY(-50%);
+    }
+    #hamburger::before {
+       content: '';
+       display: block;
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 2px;
+       background-color: #fff;
+    }
+    #hamburger::after {
+       content: '';
+       display: block;
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       width: 70%;
+       height: 2px;
+       background-color: #fff;
+    }
+    /*スマホメニュー*/
+    .sp-nav ul {
+       padding: 0;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       height: 100%;
+    }
+    .sp-nav li {
+       margin: 0;
+       padding: 0;
+    }
+    .sp-nav li span {
+       font-size: 15px;
+       color: #fff;
+    }
+    .sp-nav li a, .sp-nav li span {
+       display: block;
+       padding: 20px 0;
+    }
+    /*-閉じるアイコンー*/
+    .sp-nav .close {
+       position: relative;
+       padding-left: 20px;
+    }
+    .sp-nav .close::before {
+       content: '';
+       position: absolute;
+       top: 50%;
+       left: 0;
+       display: block;
+       width: 16px;
+       height: 1px;
+       background: #fff;
+       transform: rotate( 45deg );
+    }
+    .sp-nav .close::after {
+       content: '';
+       position: absolute;
+       top: 50%;
+       left: 0;
+       display: block;
+       width: 16px;
+       height: 1px;
+       background: #fff;
+       transform: rotate( -45deg );
+    }
+    .toggle {
+       transform: translateY( 0 );
+       opacity: 1;
+    }
  }
-
- #hamburger::after {
-   content: '';
-   display: block;
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   width: 70%;
-   height: 2px;
-   background-color: #fff;
- }
-
   /* end_ヘッダー */
   
   /* home */
@@ -124,7 +170,7 @@
     border-radius: 50% 50% 50% 50%;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 640px) {
     .home {
       width: 100%;
     }
@@ -209,7 +255,7 @@ h2:first-letter {
   margin-right: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
   .cards--col3 {
     margin-bottom: -20px;
   }
@@ -276,6 +322,9 @@ h2:first-letter {
 
 
 /* contact */
+form > .container {
+  padding: 0;
+}
 
 form{
   width:560px;

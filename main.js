@@ -1,3 +1,12 @@
+// スマホナビの表示・非表示
+$(function(){
+  const hum = $('#hamburger,.close')
+  const nav = $('.sp-nav')
+  hum.on('click',function(){
+    nav.toggleClass('toggle');
+  });
+});
+
 // ボタンの表示／非表示を切り替える関数
 const updateButton = () => {
     if ($(window).scrollTop() >= 300) {

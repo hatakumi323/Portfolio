@@ -19,6 +19,10 @@
     font-family: 'Stalemate', cursive;
   }
 
+  h3{
+    text-align: center;
+  }
+
   .container {
     max-width: 1180px;
     padding: 0 40px;
@@ -237,8 +241,18 @@ h2:first-letter {
   flex-wrap: wrap;
 }
 
-.card-image {
-  width: 100%;
+.card__img-wrapper {
+  text-align: center;
+}
+
+.fa-code,
+.fa-calendar-alt,
+.fa-git-square {
+  color: #e65f78;
+}
+
+.fa-border {
+  border-radius: 999px;
 }
 
 .cards--col3 {

@@ -28,18 +28,18 @@
       <!-- ナビゲーションエリア -->
       <nav class="pc-nav">
         <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Future</a></li>
-          <li><a href="">Works</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skill">SKILL</a></li>
+          <li><a href="#works">WORKS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
       <nav class="sp-nav">
         <ul>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">Future</a></li>
-          <li><a href="#">Works</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skill">SKILL</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#contact">CONTACT</a></li>
           <li class="close"><span>閉じる</span></li>
         </ul>
       </nav>
@@ -58,7 +58,7 @@
 
   <!-- About -->
 
-  <h2>About</h2>
+  <h2 id="about">About</h2>
   <div class="media container">
     <figure class="media__img-wrapper">
       <img class="media__img" alt="写真：手に持たれたスマホ" src="images/my_image.svg">
@@ -78,12 +78,12 @@
 
   <!-- Future -->
 
-  <section class="container">
+  <section class="container" id="skill">
     <h2>Skill</h2>
     <div class="cards cards--col3">
       <div class="cards__item card">
         <figure class="card__img-wrapper">
-          <i class="fas fa-code fa-2x fa-border"></i>
+          <i class="fas fa-code fa-3x fa-border"></i>
         </figure>
         <div class="card__body">
           <h3 class="card__title">
@@ -98,7 +98,7 @@
       <!-- /.cards__item card -->
       <div class="cards__item card">
         <figure class="card__img-wrapper">
-          <i class="far fa-calendar-alt fa-2x fa-border"></i>
+          <i class="far fa-calendar-alt fa-3x fa-border"></i>
         </figure>
         <div class="card__body">
           <h3 class="card__title">
@@ -113,7 +113,7 @@
       <!-- /.cards__item card -->
       <div class="cards__item card">
         <figure class="card__img-wrapper">
-          <i class="fab fa-git-square fa-2x fa-border"></i>
+          <i class="fab fa-git-square fa-3x fa-border"></i>
         </figure>
         <div class="card__body">
           <h3 class="card__title">
@@ -133,24 +133,38 @@
   <!-- end_future -->
 
   <!-- works -->
-  <h2>Works</h2>
-  <section class="card grid container">
-    <img class="card-img" src="images/screenshot (1).png" alt="">
-    <div class="card-content">
-      <h1 class="card-title">架空サロンサイト</h1>
-      <p class="card-text">HTML/css/Bootstrap/JavaScript/jQuery/vue.js</p>
-    </div>
-    <div class="card-link">
-      <a href="http://hatakumi323.sakura.ne.jp/" target="_blank" rel="noopener noreferrer">Website</a>
-    </div>
-  </section>
+  <h2 id="works">Works</h2>
+  <div class="card-wrap">
+
+    <section class="card container">
+      <div class="card-content">
+        <img class="card-img" src="images/0acb70da7f53154993e32134c0e6b3e2.png" alt="">
+        <h1 class="card-title">架空サロンサイト</h1>
+        <p class="card-text">HTML/css/Bootstrap/JavaScript/jQuery/vue.js</p>
+      </div>
+      <div class="card-link">
+        <a href="http://hatakumi323.sakura.ne.jp/" target="_blank" rel="noopener noreferrer">Website</a>
+      </div>
+    </section>
+    <section class="card container">
+      <div class="card-content">
+        <img class="card-img" src="images/bee5ae5fe4e8edd829578e4bbb7b8396.jpg" alt="">
+        <h1 class="card-title">ポートフォリオサイト</h1>
+        <p class="card-text">HTML/css/Bootstrap/JavaScript/jQuery/vue.js</p>
+      </div>
+      <div class="card-link">
+        <a href="https://hatakumi323.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">Website</a>
+      </div>
+    </section>
+    
+  </div>
 
   <!-- end_works -->
 
   <!-- コンタクト -->
 
   <form>
-    <h2>Contact</h2>
+    <h2 id="contact">Contact</h2>
     <div class="container">
 
       <div class="item">
@@ -190,6 +204,7 @@
 
   <!-- end_footer -->
   <script src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </body>
 
 </html>

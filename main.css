@@ -313,6 +313,7 @@ h2:first-letter {
   color: #777;
   font-size: 14px;
   line-height: 1.5;
+  text-align: center;
 }
 .card-link {
   text-align: center;
